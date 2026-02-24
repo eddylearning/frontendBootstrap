@@ -1,34 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Investment Club</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Investment Club</title>
 
-    <!--Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <main class="container py-4">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
-                 
-                <!--scaffold-->
-               <section id="app-shell" class="p-3 border rouded-3">
-                <h1 class="h5 mb-0">name</h1>
-               </section> 
-               <div class="container text-center mt-5">
-    <h1 class="text-danger">Welcome!</h1>
-    <p class="lead">This is my first Bootstrap page.</p>
-    <button class="btn btn-primary btn-lg">Get Started</button>
-</div>
+  <main class="container py-4 py-md-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+        <section id="app-shell" class="card shadow-sm border-0 overflow-hidden">
+          <div class="card-body p-3 p-md-4">
+            <header class="hero-card rounded-3 p-3 mb-3">
+              <div class="hero-top d-flex align-items-center gap-3 mb-2">
+                <img
+                  src="Assets/user profile.avif"
+                  alt=" User Profile"
+                  class="avatar"
+                />
+                <h1 class="hero-name h6 mb-0 text-white fw-bold">Michael</h1>
+                <button id="menuToggleBtn" class="btn btn-sm btn-outline-light ms-auto" type="button" aria-expanded="false" aria-controls="quickMenu">
+                  Menu
+                </button>
+              </div>
+              <nav id="quickMenu" class="quick-menu d-none mb-2" aria-label="Quick links">
+                <a href="#foundationDetails" class="quick-link">Foundation</a>
+                <a href="#economyDetails" class="quick-link">Economy</a>
+                <a href="#helpModal" class="quick-link" data-bs-toggle="modal" data-bs-target="#helpModal">Support</a>
+              </nav>
+              <p class="hero-copy mb-0 small">
+                You have officially joined your first investment knowledge club!
+              </p>
+            </header>
 
+            <section class="mb-3">
+              <div class="row g-2">
+                <div class="col-6">
+                  <article class="stat-card stat-pink rounded-3 p-2 h-100">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <img src="Assets/bernard.avif" alt="Bernard profile photo" class="mini-avatar" />
+                      <p class="small mb-0 fw-semibold">Bernard Makodimg</p>
+                    </div>
+                    <p class="mb-0 fs-4 fw-bold">350</p>
+                  </article>
+                </div>
+                <div class="col-6">
+                  <article class="stat-card stat-green rounded-3 p-2 h-100">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <img src="Assets/kingsmal.avif" alt="Kgimal profile photo" class="mini-avatar" />
+                      <p class="small mb-0 fw-semibold">Kingsmal Feet</p>
+                    </div>
+                    <p class="mb-0 fs-4 fw-bold">225</p>
+                  </article>
+                </div>
+                <div class="col-6">
+                  <article class="stat-card stat-cream rounded-3 p-2 h-100">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <img src="Assets/lihabi.jpg" alt="Caroline Lihabi profile photo" class="mini-avatar" />
+                      <p class="small mb-0 fw-semibold">Caroline Lihabi</p>
+                    </div>
+                    <p class="mb-0 fs-4 fw-bold">117</p>
+                  </article>
+                </div>
+                <div class="col-6">
+                  <article class="stat-card stat-lilac rounded-3 p-2 h-100">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <img src="Assets/linhor.jpg" alt="Caroline Lihor profile photo" class="mini-avatar" />
+                      <p class="small mb-0 fw-semibold">Caroline Lihor</p>
+                    </div>
+                    <p class="mb-0 fs-4 fw-bold">321</p>
+                  </article>
+                </div>
+              </div>
+            </section>
 
+            <section class="note-box rounded-3 p-3 mb-3">
+              <h2 class="h6 mb-2 fw-bold">Now let's make you great!</h2>
+              <p class="small mb-0">
+                There are several ways to be doing well and when we can always guide you to the goal.
+              </p>
+            </section>
+
+            <section class="membership-stack d-grid gap-2">
+              <article class="membership-card foundation rounded-3">
+                <button
+                  class="membership-toggle btn w-100 text-start fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#foundationDetails"
+                  aria-expanded="false"
+                  aria-controls="foundationDetails"
+                >
+                  FOUNDATION MEMBERSHIP
+                </button>
+                <div id="foundationDetails" class="collapse membership-details px-3 pb-3">
+                  <p class="mb-0 small">
+                    We have two ways to choose and in the future, if global fund. Services are free online with your personal representative.
+                  </p>
+                </div>
+              </article>
+
+              <article class="membership-card economy rounded-3">
+                <button
+                  class="membership-toggle btn w-100 text-start fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#economyDetails"
+                  aria-expanded="false"
+                  aria-controls="economyDetails"
+                >
+                  ECONOMY MEMBERSHIP
+                </button>
+                <div id="economyDetails" class="collapse membership-details px-3 pb-3">
+                  <p class="mb-0 small">
+                    We will invest your money for up to a guaranteed rate with the Mansa X global fund.
+                  </p>
+                </div>
+              </article>
+            </section>
+
+            <div class="mt-3 text-center">
+              <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#helpModal">
+                Contact Support
+              </button>
             </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="helpModalLabel">Support</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+        <div class="modal-body">
+          <form id="supportForm" novalidate>
+            <div class="mb-2">
+              <label class="form-label" for="supportEmail">Email</label>
+              <input id="supportEmail" class="form-control" type="email" required />
+              <div id="emailError" class="invalid-feedback d-block d-none">Enter a valid email address.</div>
+            </div>
+            <div class="mb-2">
+              <label class="form-label" for="supportMessage">Message</label>
+              <textarea id="supportMessage" class="form-control" rows="3" required></textarea>
+              <div id="messageError" class="invalid-feedback d-block d-none">Message must be at least 10 characters.</div>
+            </div>
+            <p id="formSuccess" class="text-success small mb-0 d-none">Message sent successfully.</p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="sendSupportBtn" type="button" class="btn btn-success">Send</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
