@@ -1,0 +1,145 @@
+:root {
+  --bg-page: #f3f3f3;
+  --hero-bg: #3e3f46;
+  --hero-border: #6d6240;
+  --note-bg: #1f3f52;
+  --foundation-bg: #d3ad2e;
+  --economy-bg: #6782ab;
+}
+
+body {
+  background: var(--bg-page);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#app-shell {
+  background: #ececec;
+}
+
+.hero-card {
+  background: var(--hero-bg);
+  border: 1px solid var(--hero-border);
+}
+
+.hero-top {
+  min-width: 0;
+}
+
+.hero-name {
+  min-width: 0;
+}
+
+.hero-copy {
+  margin-top: 0.2rem;
+  line-height: 1.35;
+  color: #f4f7fb;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.quick-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.quick-link {
+  font-size: 0.72rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.2rem 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d6d6d6;
+}
+
+.mini-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.stat-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.stat-card .small {
+  font-size: 0.68rem;
+  line-height: 1.1;
+}
+
+.stat-card .fs-4 {
+  font-size: 1.3rem !important;
+}
+
+.stat-pink { background: #f6d5d8; }
+.stat-green { background: #e6f3dd; }
+.stat-cream { background: #f7e9c6; }
+.stat-lilac { background: #e6d9ea; }
+
+.note-box {
+  background: var(--note-bg);
+  color: #f5f8fb;
+}
+
+.membership-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.membership-card.foundation {
+  background: var(--foundation-bg);
+}
+
+.membership-card.economy {
+  background: var(--economy-bg);
+}
+
+.membership-toggle {
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.membership-toggle:focus {
+  box-shadow: none;
+}
+
+.membership-details {
+  color: #f5f5f5;
+  font-size: 0.76rem;
+}
+
+@media (min-width: 768px) {
+  #app-shell .card-body {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-top {
+    gap: 0.6rem !important;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-name {
+    font-size: 0.95rem;
+  }
+
+  .hero-copy {
+    font-size: 0.76rem;
+  }
+}
