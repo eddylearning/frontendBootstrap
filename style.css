@@ -16,6 +16,12 @@ body {
   background: #ececec;
 }
 
+.content-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
 .hero-card {
   background: var(--hero-bg);
   border: 1px solid var(--hero-border);
@@ -27,6 +33,7 @@ body {
 
 .hero-name {
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .hero-copy {
@@ -123,9 +130,17 @@ body {
   #app-shell .card-body {
     padding: 1.5rem !important;
   }
+
+  .content-stack {
+    gap: 0.75rem;
+  }
 }
 
 @media (max-width: 420px) {
+  .hero-top {
+    flex-wrap: wrap;
+  }
+
   .hero-top {
     gap: 0.6rem !important;
   }
@@ -141,5 +156,10 @@ body {
 
   .hero-copy {
     font-size: 0.76rem;
+  }
+
+  #menuToggleBtn {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.45rem;
   }
 }
